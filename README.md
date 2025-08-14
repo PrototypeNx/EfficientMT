@@ -230,7 +230,7 @@ bash infer.sh
 ``` 
 The motion transfer results are saved in `outputs/<ref_video_name>/`.
 
-The (#Gallery) results can be reproduced using the same prompt and the corresponding reference videos in the `assets/references`.
+The [Gallery](#Gallery) results can be reproduced using the same prompt and the corresponding reference videos in the `assets/references`.
 
 ## Technical Explanation
 <div>
