@@ -222,6 +222,8 @@ def main(
 
         name = Path(video_path).stem
 
+        if not os.path.exists(output_path):
+            os.mkdir(output_path)
         if not os.path.exists(os.path.join(output_path, name)):
             os.mkdir(os.path.join(output_path, name))
 
