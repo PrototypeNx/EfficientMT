@@ -1,0 +1,41 @@
+ref_prompt: ""
+output_path: outputs
+
+pretrained_model_path: models/StableDiffusion/stable-diffusion-v1-5
+motion_module_path: models/Motion_Module/v3_sd15_mm.ckpt
+dreambooth_model_path: models/DreamBooth_LoRA/realisticVisionV60B1_v51VAE.safetensors
+fusion_blocks: up
+
+dataset_config:
+  width: 512
+  height: 512
+  video_length: 16
+
+ref_timestep: 400
+
+inference_config: configs/inference/inference-v3.yaml
+
+noise_scheduler_kwargs:
+  num_train_timesteps: 1000
+  beta_start: 0.00085
+  beta_end: 0.012
+  beta_schedule: linear
+  steps_offset: 1
+  clip_sample: false
+
+trainable_blocks:
+- up_blocks.0
+- up_blocks.1
+- up_blocks.2
+- up_blocks.3
+trainable_layers:
+- to_q
+- to_k
+- to_v
+- scaler
+
+enable_xformers_memory_efficient_attention: true
+global_seed: 42
+
+local_rank: cuda
+seed: 42

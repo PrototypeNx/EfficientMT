@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=0 python get_latent.py --reference_video "assets/references/sample_white_tiger.mp4"

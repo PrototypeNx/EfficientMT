@@ -1,0 +1,4 @@
+ref_data_path: /data/zhangzijian/video_data/tmp
+ref_prompt: ""
+output_path: /data/zhangzijian/MotionClone/val_feat
+fusion_blocks: up

@@ -1,0 +1,88 @@
+image_finetune: false
+
+output_dir: "outputs"
+inference_config: "configs/inference/inference-v3.yaml"
+pretrained_model_path: "models/StableDiffusion/stable-diffusion-v1-5"
+motion_module_path: "/data/zhangzijian/AnimateDiff/models/Motion_Module/v3_sd15_mm.ckpt"
+dreambooth_model_path: "models/DreamBooth_LoRA/realisticVisionV60B1_v51VAE.safetensors"
+
+
+noise_scheduler_kwargs:
+  num_train_timesteps: 1000
+  beta_start:          0.00085
+  beta_end:            0.012
+  beta_schedule:       "linear"
+  steps_offset:        1
+  clip_sample:         false
+
+dataset_config:
+  data_path: "/data/zhangzijian/MotionClone/clean_data_100"
+  ref_feat_path: "/data/zhangzijian/MotionClone/ref_feat"
+  # data_path: "/data/zhangzijian/AnimateDiff/samples_data"
+  # ref_feat_path: /data2/zhangzijian/MotionDirector/clean_ref_feat
+
+  width: 512
+  height: 512
+  video_length: 16
+
+
+validation_data:
+  ref_video_path: /data/zhangzijian/MotionClone/reference_videos/sample_white_tiger.mp4 #/data/zhangzijian/MotionClone/reference_videos/sample_fox.mp4 #data/car-turn.mp4
+  ref_prompt: "" #fox, turning its head. #car, running, on the road.
+  ref_feat_path: "/data/zhangzijian/MotionClone/val_feat/tmp/sample-white-tiger.pt"
+  prompts:
+    # - "car, running, in the desert"
+    # - "van, running, in the desert"
+    # - "Lamborghini, running, on the beach"
+    # - "cat, turning its head, in the desert"
+    # - "bear, turning its head, in the forest"
+    # - "boy, turning its head, in the room"
+    - "cat on the beach"
+    - "dog in the desert"
+    - "horse in the desert"
+  num_inference_steps: 25
+  guidance_scale: 8.
+
+########## update ###########
+ref_timestep: 400
+fusion_blocks: up
+
+trainable_blocks:
+  # - "mid_block"
+  - "up_blocks.0"
+  - "up_blocks.1"
+  - "up_blocks.2"
+  - "up_blocks.3"
+
+trainable_layers:
+  - "to_q"
+  - "to_k"
+  - "to_v"
+  - "scaler"
+
+cfg_random_null_text: True
+cfg_random_null_text_ratio: 0.1
+
+null_ref_text: True
+
+
+train_data_path: 
+
+unet_checkpoint_path: ""
+
+learning_rate:    1.e-4
+train_batch_size: 1
+
+max_train_epoch:      -1
+max_train_steps:      50000
+checkpointing_epochs: -1
+checkpointing_steps:  2000
+
+validation_steps:       1000
+validation_steps_tuple: [1, 1000]
+
+global_seed: 42
+mixed_precision_training: true
+enable_xformers_memory_efficient_attention: True
+
+is_debug: False
