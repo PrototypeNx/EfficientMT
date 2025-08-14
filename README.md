@@ -113,7 +113,7 @@ Online viewing may cause **motion desync**. We recommend downloading the page to
             </td>
             <td>
               <img src="assets/output/03972e52d77a20b6.gif" width="200" controls></img>
-              <div style="width: 200px;">
+              <div style="max-width: 220px; margin: 0 auto;">
                 <p align="center">A misty waterfall cascading into a clear pool below.</p>
               </div>
             </td>
