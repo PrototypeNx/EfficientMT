@@ -28,7 +28,7 @@ Online viewing may cause **motion desync**. We recommend downloading the page to
             <td>
               <img src="assets/output/sample-cow.gif" width="200" controls></img>
               <div style="width: 200px;">
-                <p align="center">tiger, raises its head, in the snow.</p>
+                <p align="center">tiger, raises its head, in the<br>snow.</p>
               </div>
             </td>
           </tr>
@@ -68,7 +68,7 @@ Online viewing may cause **motion desync**. We recommend downloading the page to
             <td>
               <img src="assets/output/lion2.gif" width="200" controls></img>
               <div style="width: 200px;">
-                <p align="center">wolf, lying down, on the grass.</p>
+                <p align="center">wolf, lying down, on the<br>grass.</p>
               </div>
             </td>
           </tr>
@@ -87,7 +87,7 @@ Online viewing may cause **motion desync**. We recommend downloading the page to
             <td>
               <img src="assets/output/dance2.gif" width="200" controls></img>
               <div style="width: 200px;">
-                <p align="center">blonde, dancing, on the beach.</p>
+                <p align="center">blonde, dancing, on the<br>beach.</p>
               </div>
             </td>
           </tr>
@@ -113,7 +113,7 @@ Online viewing may cause **motion desync**. We recommend downloading the page to
             </td>
             <td>
               <img src="assets/output/03972e52d77a20b6.gif" width="200" controls></img>
-              <div style="max-width: 220px; margin: 0 auto;">
+              <div style="width: 200px;">
                 <p align="center">A misty waterfall cascading into a clear pool below.</p>
               </div>
             </td>
