@@ -212,7 +212,7 @@ Prepare the motion module `v3_sd15_mm.ckpt` adopted from [AnimateDiff](https://g
 
 Prepare the visual enhancement LoRA module `realisticVisionV60B1_v51VAE.safetensors` adopted from [RealisticVisionV6.0](https://civitai.com/models/4201?modelVersionId=245598) in `models/DreamBooth_LoRA`.
 
-Prepare the pretrained integreted temporal attention weights `checkpoint.ckpt` in `models/Integrated_Attention`.
+Prepare the pretrained integrated temporal attention weights `checkpoint.ckpt` in `models/Integrated_Attention`.
 
 ### Inference
 Run the following script to generate the motion transfer results:
@@ -222,13 +222,15 @@ python inference.py --config configs/prompts/inference.yaml\
                     --ref_video_path assets/references/sample_white_tiger.mp4\
                     --prompt "cat walking on the beach."
 ```
-Modify the `ref_video_path` and `prompt` to select reference video and customize your motion transfer prompt.
+Modify the `ref_video_path` and `prompt` to select the reference video and customize your motion transfer prompt.
 
 Or run the following scripts:
 ```
 bash infer.sh
 ``` 
 The motion transfer results are saved in `outputs/<ref_video_name>/`.
+
+The (#Gallery) results can be reproduced using the same prompt and the corresponding reference videos in the `assets/references`.
 
 ## Technical Explanation
 <div>
