@@ -114,7 +114,7 @@ Online viewing may cause **motion desync**. We recommend downloading the page to
             <td>
               <img src="assets/output/03972e52d77a20b6.gif" width="200" controls></img>
               <div style="width: 200px;">
-                <p align="center">A misty waterfall cascading into a clear pool below.</p>
+                <p align="center">A starry night sky above<br>a quiet mountain range.</p>
               </div>
             </td>
           </tr>
@@ -133,7 +133,7 @@ Online viewing may cause **motion desync**. We recommend downloading the page to
             <td>
               <img src="assets/output/064f86a52bb038ef.gif" width="200" controls></img>
               <div style="width: 200px;">
-              <p align="center">A coastal shoreline with waves crashing on jagged rocks.</p>
+              <p align="center">A coastal shoreline with<br>waves crashing on jagged<br>rocks.</p>
               </div>
             </td>
           </tr>
@@ -154,7 +154,7 @@ Online viewing may cause **motion desync**. We recommend downloading the page to
             <td>
               <img src="assets/output/00eb40d5943d736e.gif" width="200" controls></img>
               <div style="width: 200px;">
-                <p align="center">A frozen pond surrounded by frost-covered trees.</p>
+                <p align="center">A frozen pond surrounded<br>by frost-covered trees.</p>
               </div>
             </td>
           </tr>
@@ -173,7 +173,7 @@ Online viewing may cause **motion desync**. We recommend downloading the page to
             <td>
               <img src="assets/output/04c274ee7ff5faa4.gif" width="200" controls></img>
               <div style="width: 200px;">
-              <p align="center">A dense forest with sunlight filtering through the trees.</p>
+              <p align="center">A dense forest with sunlight<br>filtering through the trees.</p>
               </div>
             </td>
           </tr>
