@@ -37,7 +37,6 @@ import transformers
 from transformers import CLIPTextModel, CLIPTokenizer
 
 from animatediff.utils.convert_from_ckpt import convert_ldm_unet_checkpoint, convert_ldm_clip_checkpoint, convert_ldm_vae_checkpoint
-from animatediff.data.dataset import WebVid10M
 from animatediff.models.unet import UNet3DConditionModel
 from animatediff.models.manual_temp_attn import ReferenceTemporalAttentionControl
 from animatediff.pipelines.pipeline_my import MotionPipeline
