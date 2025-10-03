@@ -9,6 +9,8 @@ It is an efficient end-to-end model for video motion transfer, which adapts a pr
 
 [![arXiv](https://img.shields.io/badge/arXiv-2503.19369-b31b1b.svg)](https://arxiv.org/abs/2503.19369) [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20HuggingFace-Model-yellow)](https://huggingface.co/yfcai/EfficientMT) [![ModelScope](https://img.shields.io/badge/%F0%9F%91%BE%20ModelScope-Model-blue)](https://www.modelscope.cn/models/q473680239/EfficientMT)
 
+https://github.com/user-attachments/assets/15540f91-998c-4320-a1bb-973a4c7f29e5
+
 ## Gallery
 Online viewing may cause **motion desync**. We recommend downloading the page to view **locally** for a better preview.
 ### Subject Motion
